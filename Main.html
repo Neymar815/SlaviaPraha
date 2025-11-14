@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moje stránka</title>
+<style>
+/* ==============================
+   ZÁKLADNÍ NASTAVENÍ
+   ============================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ==============================
+   HLAVIČKA
+   ============================== */
+header {
+  background-color: #c20000;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+}
+
+/* ==============================
+   NAVIGACE
+   ============================== */
+nav {
+  background-color: #a50000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 12px 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #c20000;
+}
+
+/* ==============================
+   HLAVNÍ OBSAH
+   ============================== */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+section {
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #c20000;
+  margin-top: 0;
+}
+
+/* ==============================
+   GALERIE
+   ============================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+/* ==============================
+   TABULKA HRÁČŮ
+   ============================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #c20000;
+  color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+}
+
+/* ==============================
+   FORMULÁŘ
+   ============================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #c20000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a50000;
+}
+
+/* ==============================
+   PATIČKA
+   ============================== */
+footer {
+  background-color: #a50000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+/* ==============================
+   RESPONSIVITA
+   ============================== */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main {
+    margin: 10px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>SK Slavia Praha</h1>
+  <p>Neoficiální fanouškovská stránka červenobílých</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="Main.html">Úvod</a></li>
+    <li><a href="Tym.html">Tým</a></li>
+    <li><a href="Historie.html">Historie</a></li>
+    <li><a href="Kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="uvod">
+    <h2>Úvod</h2>
+    <p>Vítejte na neoficiálních stránkách fotbalového klubu <strong>SK Slavia Praha</strong>. Klub s dlouhou tradicí, vášní a oddaností svým barvám. Slavie není jen fotbal – je to rodina, historie a srdce červenobílé Prahy.</p>
+  </section>
+
+  <section id="historie">
+    <h2>Historie</h2>
+    <p>SK Slavia Praha byl založen v roce <strong>1892</strong>, patří mezi nejstarší a nejúspěšnější české fotbalové kluby. Klub získal desítky mistrovských titulů a reprezentoval Českou republiku v evropských pohárech.</p>
+    <p>Domácím stadionem je moderní <strong>Fortuna Arena</strong> v pražských Vršovicích, která se stala symbolem současné éry klubu.</p>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <div class="gallery">
+      <img src="https://d48-a.sdn.cz/d_48/c_img_QR_6/4DHB1B.jpeg" alt="Slavia 1">
+      <img src="https://d8-a.sdn.cz/d_8/c_imgrestricted_oV_A/kO7h3dRn21ChmXITQCEeuSO/bf48/sport-fotbal-slavia.jpeg?fl=cro,0,80,1536,864%7Cres,1200,,1%7Cjpg,80,,1" alt="Slavia 2">
+      <img src="https://oneplaysport.cz/data/o/s/gw0eh7xxqaaffbu.jpeg" alt="Slavia 3">
+      <img src="https://d16-a.sdn.cz/d_16/c_img_ob_A/kBj94XhVwDanygB67DzP8L3/d038.mpo?fl=cro,1813,119,2206,1654%7Cres,1200,,1%7Cjpg,80,,1" alt="Slavia 4">
+    </div>
+  </section>
+
+<footer>
+  &copy; <span id="rok"></span> SK Slavia Praha | Neoficiální fanouškovský web
+</footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt - Slavia Praha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt – SK Slavia Praha</title>
+<style>
+/* ==============================
+   ZÁKLADNÍ NASTAVENÍ
+   ============================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+/* HLAVIČKA */
+header {
+  background-color: #c20000;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+header p {
+  margin: 5px 0 0;
+}
+
+nav {
+  background-color: #a50000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 12px 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #c20000;
+}
+
+
+/* HLAVNÍ OBSAH */
+main {
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+/* SEKCE */
+section {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #c20000;
+  border-bottom: 2px solid #c20000;
+  padding-bottom: 5px;
+}
+
+/* KONTAKTNÍ ÚDAJE */
+.contact-info p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: #c20000;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* FORMULÁŘ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #c20000;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a50000;
+}
+
+/* MAPA */
+iframe {
+  width: 100%;
+  border: none;
+  height: 300px;
+  border-radius: 4px;
+}
+
+
+/* RESPONSIVITA */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+  }
+}
+</style>
+</head>
+<body>
+
+
+  <header>
+  <h1>SK Slavia Praha</h1>
+  <p>Neoficiální fanouškovská stránka červenobílých</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="Main.html">Úvod</a></li>
+    <li><a href="Tym.html">Tým</a></li>
+    <li><a href="Historie.html">Historie</a></li>
+    <li><a href="Kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+
+
+<main>
+  <section class="contact-info">
+    <h2>Kontaktní údaje klubu</h2>
+    <p><strong>Adresa:</strong><br>
+      Fortuna Arena (Eden Aréna)<br>
+      U Slavie 1540/2a, 100 00 Praha 10 – Vršovice
+    </p>
+    <p><strong>Telefon:</strong> +420 234 627 111</p>
+    <p><strong>E-mail:</strong> <a href="mailto:info@slavia.cz">info@slavia.cz</a></p>
+    <p><strong>Oficiální web:</strong> <a href="https://www.slavia.cz" target="_blank">www.slavia.cz</a></p>
+    <p><strong>Sociální sítě:</strong><br>
+      <a href="https://www.facebook.com/slaviapraha" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/slaviapraha" target="_blank">Instagram</a> |
+      <a href="https://x.com/slaviaofficial" target="_blank">X (Twitter)</a> |
+      <a href="https://www.youtube.com/@slaviapraha" target="_blank">YouTube</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Mapa stadionu</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.067691470867!2d14.475507177039257!3d50.0678704160814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94cfc8e92499%3A0x59c64d77704a9b8e!2sFortuna%20Arena!5e0!3m2!1scs!2scz!4v1699999999999!5m2!1scs!2scz" 
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+</body>
+</html>

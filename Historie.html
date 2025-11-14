@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Historie - Slavia Praha</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ==============================
+   ZÁKLADNÍ NASTAVENÍ
+   ============================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+/* HLAVIČKA */
+header {
+  background-color: #c20000;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+header p {
+  margin: 5px 0 0;
+}
+
+
+nav {
+  background-color: #a50000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 12px 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #c20000;
+}
+
+
+/* HLAVNÍ OBSAH */
+main {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+/* SEKCE */
+section {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #c20000;
+  border-bottom: 2px solid #c20000;
+  padding-bottom: 5px;
+}
+
+/* ODKAZY A OBRÁZKY */
+img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* PATIČKA */
+footer {
+  background-color: #a50000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* RESPONSIVITA */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>SK Slavia Praha</h1>
+  <p>Neoficiální fanouškovská stránka červenobílých</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="Main.html">Úvod</a></li>
+    <li><a href="Tym.html">Tým</a></li>
+    <li><a href="Historie.html">Historie</a></li>
+    <li><a href="Kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section>
+    <h2>Počátky a založení</h2>
+    <p>SK Slavia Praha byl založen v roce <strong>1892</strong> skupinou studentů a sportovních nadšenců. Klub se rychle stal symbolem fotbalu v českých zemích a od začátku si zakládal na poctivé hře, disciplíně a vášni pro sport.</p>
+  </section>
+
+  <section>
+    <h2>Meziválečná éra</h2>
+    <p>Ve 20. a 30. letech 20. století se Slavia stala jedním z nejúspěšnějších československých klubů. Klub získal několik mistrovských titulů a jeho hráči reprezentovali národní tým. Tento období položilo základy legendární reputace klubu.</p>
+  </section>
+
+  <section>
+    <h2>Poválečná doba a modernizace</h2>
+    <p>Po druhé světové válce klub pokračoval ve své dominanci v československém fotbale. V 90. letech se Slavia adaptovala na profesionální éru, obnovila moderní stadion a posílila mládežnické akademie. Klub získal řadu mistrovských titulů i úspěchů v evropských soutěžích.</p>
+  </section>
+
+  <section>
+    <h2>Současnost</h2>
+    <p>Dnes SK Slavia Praha hraje na moderní <strong>Fortuna Areně</strong> v pražských Vršovicích. Klub je stále symbolem tradice, vítězství a červenobílé hrdosti. Mládežnické akademie produkují talenty, které se prosazují nejen v české lize, ale i v zahraničí.</p>  </section>
+</main>
+
+<script>
+document.getElementById("rok").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

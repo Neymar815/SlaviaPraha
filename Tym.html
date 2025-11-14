@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Tým - Slavia Praha</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* ==============================
+   ZÁKLADNÍ NASTAVENÍ
+   ============================== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+/* HLAVIČKA */
+header {
+  background-color: #c20000;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+header p {
+  margin: 5px 0 0;
+}
+
+/* HLAVNÍ OBSAH */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* SEKCE */
+section {
+  margin-bottom: 30px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #c20000;
+  border-bottom: 2px solid #c20000;
+  padding-bottom: 5px;
+}
+
+/* TABULKA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #c20000;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+/* RESPONSIVITA */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+}
+
+nav {
+  background-color: #a50000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 12px 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #c20000;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <h1>SK Slavia Praha</h1>
+  <p>Neoficiální fanouškovská stránka červenobílých</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="Main.html">Úvod</a></li>
+    <li><a href="Tym.html">Tým</a></li>
+    <li><a href="Historie.html">Historie</a></li>
+    <li><a href="Kontakt.html">Kontakt</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="brankari">
+    <h2>Brankáři</h2>
+    <table>
+      <tr><th>Číslo</th><th>Jméno</th></tr>
+      <tr><td>1</td><td>Ondřej Kolář</td></tr>
+      <tr><td>35</td><td>Jakub Markovič</td></tr>
+      <tr><td>36</td><td>Jindřich Staněk</td></tr>
+    </table>
+  </section>
+
+  <section id="obranci">
+    <h2>Obránci</h2>
+    <table>
+      <tr><th>Číslo</th><th>Jméno</th></tr>
+      <tr><td>18</td><td>Jan Bořil</td></tr>
+      <tr><td>15</td><td>Emmanuel Fully</td></tr>
+      <tr><td>8</td><td>Daiki Hashioka</td></tr>
+      <tr><td>3</td><td>Tomáš Holeš</td></tr>
+      <tr><td>2</td><td>Štěpán Chaloupek</td></tr>
+      <tr><td>37</td><td>Dominik Javorček</td></tr>
+      <tr><td>12</td><td>Youssoupha Mbodji</td></tr>
+      <tr><td>5</td><td>Igoh Ogbu</td></tr>
+      <tr><td>4</td><td>David Zima</td></tr>
+      <tr><td>27</td><td>Tomáš Vlček</td></tr>
+      <tr><td>33</td><td>Ondřej Zmrzlý</td></tr>
+    </table>
+  </section>
+
+  <section id="zaloznici">
+    <h2>Záložníci</h2>
+    <table>
+      <tr><th>Číslo</th><th>Jméno</th></tr>
+      <tr><td>10</td><td>Christos Zafeiris</td></tr>
+      <tr><td>17</td><td>Lukáš Provod</td></tr>
+      <tr><td>19</td><td>Oscar Dorley</td></tr>
+      <tr><td>21</td><td>David Douděra</td></tr>
+      <tr><td>16</td><td>David Moses</td></tr>
+      <tr><td>23</td><td>Michal Sadílek</td></tr>
+      <tr><td>11</td><td>Youssoupha Sanyang</td></tr>
+      <tr><td>22</td><td>Lukáš Vorlický</td></tr>
+      <tr><td>7</td><td>Muhammed Cham</td></tr>
+    </table>
+  </section>
+
+  <section id="utocnici">
+    <h2>Útočníci</h2>
+    <table>
+      <tr><th>Číslo</th><th>Jméno</th></tr>
+      <tr><td>25</td><td>Tomáš Chorý</td></tr>
+      <tr><td>13</td><td>Mojmír Chytil</td></tr>
+      <tr><td>9</td><td>Vasil Kušej</td></tr>
+      <tr><td>31</td><td>Erik Prekop</td></tr>
+      <tr><td>26</td><td>Ivan Schranz</td></tr>
+    </table>
+  </section>
+</main>
+
+
+<script>
+document.getElementById("rok").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
